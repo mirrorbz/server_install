@@ -8,3 +8,4 @@ system("/usr/bin/yum update  -y httpd httpd-tools httpd-devel");
 
 system("/usr/bin/systemctl enable httpd.service");
 
+system("/usr/sbin/httpd -v");
