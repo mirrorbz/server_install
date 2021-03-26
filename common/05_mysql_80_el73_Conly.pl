@@ -10,3 +10,5 @@ system("/usr/bin/yum-config-manager --enable mysql80-community");
 system("/usr/bin/yum-config-manager --disable mysql57-community");
 system("/usr/bin/yum install -y mysql-community-client");
 system("/usr/bin/yum update  -y mysql-community-client");
+
+printf("TODO /usr/bin/systemctl enable mysqld.service");

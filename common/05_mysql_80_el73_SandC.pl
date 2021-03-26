@@ -12,3 +12,5 @@ system("/usr/bin/yum install -y mysql-community-client");
 system("/usr/bin/yum update  -y mysql-community-client");
 system("/usr/bin/yum install -y mysql-community-server");
 system("/usr/bin/yum update  -y mysql-community-server");
+
+printf("TODO /usr/bin/systemctl enable mysqld.service");
