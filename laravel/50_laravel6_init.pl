@@ -11,6 +11,8 @@ die unless (-d $base_dir);
 chdir($base_dir);
 die if (-e $project);
 
+# laravel 6.* 明示的指定。
+# 現時点では、root 権限でインストールする。後で調整を行う。
 system("/usr/bin/yes | composer create-project \"laravel/laravel=6.*\" $project");
 
 chdir($project);
