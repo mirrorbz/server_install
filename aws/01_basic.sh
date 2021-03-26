@@ -12,8 +12,8 @@ cd /root/
 /usr/bin/yum update  -y epel-release
 /usr/bin/rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
 
-/usr/bin/yum install -y gcc libgcc make wget curl openssl openssl-libs git bind-utils
-/usr/bin/yum update  -y gcc libgcc make wget curl openssl openssl-libs git bind-utils
+/usr/bin/yum install -y gcc libgcc make wget curl openssl openssl-libs git bind-utils rsync
+/usr/bin/yum update  -y gcc libgcc make wget curl openssl openssl-libs git bind-utils rsync
 
 /usr/bin/yum install -y vim vim-enhanced vim-filesystem vim-common
 /usr/bin/yum update  -y vim vim-enhanced vim-filesystem vim-common
