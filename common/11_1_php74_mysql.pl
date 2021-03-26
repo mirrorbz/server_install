@@ -13,8 +13,11 @@ if (-e '/usr/bin/php' && -l '/usr/bin/php' ) {
 }
 system("/bin/ln -sf /usr/bin/php74 /usr/bin/php");
 
+system("/usr/bin/yum install -y php74-php-pecl-zip");
+system("/usr/bin/yum update  -y php74-php-pecl-zip");
+
 system("/usr/bin/yum install -y php74-php-mysqlnd");
 system("/usr/bin/yum update  -y php74-php-mysqlnd");
 
-my $php_ini_script = sprintf("%s/11_9_php_ini.pl", $FindBin::Bin);
+my $php_ini_script = sprintf("%s/11_8_php_ini.pl", $FindBin::Bin);
 system($php_ini_script);
